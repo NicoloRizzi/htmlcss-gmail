@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+/* STYLES BODY */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+
+}
+/* STYLES BLOCK CONTAINER PER SETTARE CONTENUTO + MARGINI */
+#container {
+  width: 70%;
+  margin: 0px auto;
+}
+/*STYLES PER LOGO SETTANDO UN MARGINE IN ALTO LA SUA POSIZIONE RISPETTO AL TESTO + LARGHEZZA */
+#logo {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 50px;
+}
+/* STYLES PER TESTO LOGO DIMENSIONE, COLORE, POSIZIONE */
+#logo-text {
+  vertical-align: text-top;
+  font-size: 30px;
+  color: white;
+}
+/* STYLES SEZIONE MESSAGGI DA LEGGERE CON COLORE, DIMENSIONE, MARGINI, BORDI E SMUSSAMENTO*/
+#unread-text {
+  color: #white;
+  font-size: 25px;
+  margin: 50px; 0;
+  border: 40px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
+}
+/*STYLES PER NUMERO SEZIONE MESSAGGI DA LEGGERE CON DISPLAY INLINE-BLOCK, COLORE SFONDO, LARGHEZZA DEL CONTENITORE CON ALTEZZA, SMUSSAMENTO, ALLINEAMENTO DEL TESTO, COLORE TESTO */
+.unread-numb {
+  display: inline-block;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: darkblue;
+}
+/* STYLE PER BLOCCO RIGA EMAIL CON COLORE DI SFONDO, PADDING INTERNO, BORDO E MARGINE */
+.email-row {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+
+}
+
+.read {
+  background-color: white;
+}
+
+.unread {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*PSEUDO ELEMENTO */
+.intro-text::before {
+  content: '- ';
+}
+
+/*PSEUDO ELEMENTO */
+.intro-text::after {
+  content: '...';
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#span-footer {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 1);
+}

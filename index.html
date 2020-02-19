@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home &ndash; Gmail</title>
+    <!-- IMPORT DEL FONT DA LINK ESTERNO GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- IMPORT DELLO STILE APPLICATO ALLA PAGINA -->
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <!-- CREZIONE DI CONTENITORE PER SETTARE MARGINI E LARGHEZZA PAGINA -->
+    <div id="container">
+      <header>
+       <img id="logo"src="assets/logo-gmail.png" alt="Gmail">
+       <span id="logo-text">Gmail</span>
+      </header>
+    <main>
+      <!-- CREAZIONE SEZIONE RICERCA -->
+      <section id="search">
+        <input type="text" name="search" value="" placeholder="Search">
+        <input type="submit" name="submit" value="VAI">
+        <div id="unread-text">
+          HAI <span class="unread-numb">
+            20
+          </span>
+          MAIL DA LEGGERE.
+        </div>
+        <!-- CREAZIONE DELLA SEZIONE LISTA GLOBALE EMAIL-->
+        <section id="email-list">
+          <div class="email-row unread">
+            <input type="checkbox" name="" value="">
+            <span title="Aggiungi ai preferiti">&star;</span>
+            <strong>Oggetto della mail</strong>
+            <span class="intro-text">Testo della email</span>
+          </div>
+          <div class="email-row unread">
+            <input type="checkbox" name="" value="">
+            <span title="Aggiungi ai preferiti">&star;</span>
+            <strong>Oggetto della mail</strong>
+            <span class="intro-text">Testo della email</span>
+          </div>
+          <div class="email-row read">
+            <input type="checkbox" name="" value="">
+            <span title="Aggiungi ai preferiti">&star;</span>
+            <strong>Oggetto della mail</strong>
+            <span class="intro-text">Testo della email</span>
+          </div>
+          <div class="email-row read">
+            <input type="checkbox" name="" value="">
+            <span title="Aggiungi ai preferiti">&star;</span>
+            <strong>Oggetto della mail</strong>
+            <span class="intro-text">Testo della email</span>
+          </div>
+        </section>
+      </section>
+      <!-- CREAZIONE DI UN FOOTER GENERICO -->
+      <footer>
+        Realizzato da <span id="span-footer">Nicolò Rizzi &copy;</span>
+      </footer>
+    </main>
+  </div>
+  </body>
+</html>
